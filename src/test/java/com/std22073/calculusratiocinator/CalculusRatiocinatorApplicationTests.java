@@ -25,9 +25,9 @@ class CalculusRatiocinatorApplicationTests {
         Donc louPauvreDoncLouGenereux = new Donc(louPauvre, louGenereux);
         Ou louBeauOuLouGenereux = new Ou(louBeau, louGenereux);
 
-        System.out.println("Lou est pauvre et Lou est généreux? " + louPauvreEtLouGenereux.estVrai()); // Faux
-        System.out.println("Si Lou est beau alors Lou est pauvre? " + louBeauDoncLouPauvre.estVrai()); // Vrai
-        System.out.println("Si Lou est pauvre alors Lou est généreux? " + louPauvreDoncLouGenereux.estVrai()); // Faux
-        System.out.println("Lou est beau ou Lou est généreux? " + louBeauOuLouGenereux.estVrai()); // Vrai
+        System.out.println("Lou est pauvre et Lou est généreux? " + louPauvreEtLouGenereux.estVrai());
+        System.out.println("Si Lou est beau alors Lou est pauvre? " + louBeauDoncLouPauvre.estVrai());
+        System.out.println("Si Lou est pauvre alors Lou est généreux? " + louPauvreDoncLouGenereux.estVrai()); 
+        System.out.println("Lou est beau ou Lou est généreux? " + louBeauOuLouGenereux.estVrai()); 
     }
 }
