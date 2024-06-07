@@ -12,16 +12,11 @@ public class Ou extends Conjonction {
 
     @Override
     public boolean estVrai() {
-        return evaluerVerite(getAffirmation1()) && evaluerVerite(getAffirmation2());
+        return evaluerVerite(getAffirmation1()) || evaluerVerite(getAffirmation2());
     }
 
     private boolean evaluerVerite(Affirmation affirmation) {
         TypeAffirmation type = affirmation.getType();
-        if (type == TypeAffirmation.VERITE) {
-            return true;
-        } else if (type == TypeAffirmation.MENSONGE) {
-            return false;
-        }
-        return false;
+        return type == TypeAffirmation.VERITE;
     }
 }

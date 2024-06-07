@@ -16,11 +16,6 @@ public class Et extends Conjonction {
 
     private boolean evaluerVerite(Affirmation affirmation) {
         TypeAffirmation type = affirmation.getType();
-        if (type == TypeAffirmation.VERITE) {
-            return true;
-        } else if (type == TypeAffirmation.MENSONGE) {
-            return false;
-        }
-        return false;
+        return type == TypeAffirmation.VERITE;
     }
 }
