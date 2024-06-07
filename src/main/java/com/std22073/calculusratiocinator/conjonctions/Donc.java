@@ -16,7 +16,15 @@ public class Donc extends Conjonction {
     }
 
     private boolean evaluerVerite(Affirmation affirmation) {
-        TypeAffirmation type = affirmation.getType();
-        return type == TypeAffirmation.VERITE;
+        switch (affirmation.getType()) {
+            case SIMPLE:
+                return false;
+            case VERITE:
+                return true;
+            case MENSONGE:
+                return false;
+            default:
+                throw new IllegalArgumentException("Type d'affirmation inattendu");
+        }
     }
 }
