@@ -11,6 +11,7 @@ public class Affirmation {
 
     private final String proposition;
     private final TypeAffirmation type;
+    
     public void afficherValeurDeVerite() {
         System.out.println("Je ne sais pas comment calculer la valeur de vérité de cette affirmation.");
     }
