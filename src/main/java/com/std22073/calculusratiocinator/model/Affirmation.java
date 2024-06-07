@@ -1,11 +1,13 @@
 package com.std22073.calculusratiocinator.model;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
-import lombok.RequiredArgsConstructor;
+import lombok.Setter;
 import lombok.ToString;
 
+@AllArgsConstructor
 @Getter
-@RequiredArgsConstructor
+@Setter
 @ToString(of = "proposition")
 public class Affirmation {
 
