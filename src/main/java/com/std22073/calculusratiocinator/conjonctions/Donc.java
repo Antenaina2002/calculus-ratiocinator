@@ -2,7 +2,6 @@ package com.std22073.calculusratiocinator.conjonctions;
 
 import com.std22073.calculusratiocinator.model.Affirmation;
 import com.std22073.calculusratiocinator.model.Conjonction;
-import com.std22073.calculusratiocinator.model.TypeAffirmation;
 
 public class Donc extends Conjonction {
 
